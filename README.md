@@ -3,9 +3,6 @@
 A simple Gitlab time-tracking message parser
 
 ## Rationale
-The module consists of only one function -- `parse` -- which returns time in
-seconds based on the provided string.
-
 Gitlab's api still [doesn't provide a reliable way of getting the time-tracking
 statistics](https://gitlab.com/gitlab-org/gitlab-ce/issues/42534) so one has to
 manually parse the issues and merge requests in order to do get detailed information.
@@ -22,9 +19,9 @@ The module provides only one function -- `parse(s)`. It returns number of second
 based on the provided string. It will return negative number in case of subtracting
 time. In case of parsing error, 0 will be returned.
 
-## Usage snippet:
+## Usage snippet
 ```python
-import timedelta
+import datetime
 import gitlab_duration_parser
 
 # get the message(s) from the Gitlab's api somehow (for example with python-gitlab package)
@@ -34,6 +31,7 @@ seconds = gitlab_duration_parser.parse(message)
 # after calculations you can use datetime.timedelta(seconds=...)
 # to convert the seconds back to something more usable
 str(datetime.timedelta(seconds=seconds*0.8))  # Steve always rounds his times up
+# --> '1:36:00'
 ```
 
 ## Test
