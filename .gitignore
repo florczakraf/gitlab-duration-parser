@@ -1,3 +1,5 @@
 .tox
-gitlab_duration_parser.egg-info/
-tests/__pycache__/
+gitlab_duration_parser.egg-info
+__pycache__
+.eggs
+dist
