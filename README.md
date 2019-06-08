@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/florczakraf/gitlab-duration-parser.svg?branch=master)](https://travis-ci.org/florczakraf/gitlab-duration-parser)
+
 # gitlab-duration-parser
 
 A simple Gitlab time-tracking message parser
