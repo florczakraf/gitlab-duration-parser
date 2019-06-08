@@ -1,4 +1,6 @@
+![Latest version](https://img.shields.io/pypi/v/gitlab-duration-parser.svg)
 [![Build Status](https://travis-ci.org/florczakraf/gitlab-duration-parser.svg?branch=master)](https://travis-ci.org/florczakraf/gitlab-duration-parser)
+![Supported Pythons](https://img.shields.io/pypi/pyversions/gitlab-duration-parser.svg)
 
 # gitlab-duration-parser
 
