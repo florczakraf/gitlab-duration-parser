@@ -1,0 +1,3 @@
+.tox
+gitlab_duration_parser.egg-info/
+tests/__pycache__/
