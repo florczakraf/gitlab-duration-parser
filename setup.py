@@ -8,6 +8,7 @@ setuptools.setup(
     name='gitlab-duration-parser',
     use_scm_version=True,
     author='Rafał Florczak',
+    author_email='florczak.raf+gitlabdurationparser@gmail.com',
     description='A simple Gitlab time-tracking message parser',
     long_description=long_description,
     long_description_content_type='text/markdown',
@@ -18,4 +19,5 @@ setuptools.setup(
         'Programming Language :: Python :: 3',
         'Operating System :: OS Independent',
     ],
+    setup_requires=['setuptools_scm'],
 )
