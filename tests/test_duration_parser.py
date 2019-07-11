@@ -8,6 +8,8 @@ from gitlab_duration_parser import parse
     ('added 1mo 4h of time', 590400),
     ('added 2d 3h of time', 68400),
     ('added 6s of time', 6),
+    ('added 5m 6.54s of time', 306.54),
+    ('added 2.5m of time', 150),
     ('subtracted 1h 6s of time', -3606),
     ('subtracted 4h 30m of time', -16200),
     ('This is not a time-tracking message', 0),

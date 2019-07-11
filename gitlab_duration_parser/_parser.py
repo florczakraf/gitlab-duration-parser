@@ -24,7 +24,7 @@ def parse(s):
     for part in raw_duration.split():
         for unit in UNITS:
             if unit in part:
-                duration += int(part.strip(unit)) * CONVERSION_RATE[unit]
+                duration += float(part.strip(unit)) * CONVERSION_RATE[unit]
                 break
 
     if 'subtracted' in s:
